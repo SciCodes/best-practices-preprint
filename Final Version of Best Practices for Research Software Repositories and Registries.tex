@@ -1,0 +1,1095 @@
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[unicode=true]{hyperref}
+\hypersetup{
+            pdftitle={Best Practices for Research Software Registries and Repositories: A Concise Guide},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+\title{\protect\hypertarget{_n68im9e6pq4}{}{}Best Practices for Research
+Software Registries and Repositories: A Concise Guide}
+\date{}
+
+\begin{document}
+\maketitle
+
+\textbf{TABLE OF CONTENTS}
+
+\section{Introduction}\label{introduction}
+
+Scientific software registries and repositories serve various roles in
+their respective disciplines. \emph{Registries} are typically indexes or
+catalogs of software stored elsewhere, while \emph{repositories} are
+both indexes \emph{and} places where software is stored. Both types of
+resource improve software discoverability and research transparency,
+provide information for software citations, and foster preservation of
+computational methods that might otherwise be lost over time, thereby
+supporting research reproducibility and replicability. Many provide or
+are integrated with other services, including indexing and archival
+services, which can be leveraged by librarians, digital archivists,
+journal editors and publishers, and researchers alike.
+
+Having specific policies in place for software registries and
+repositories ensures that users and administrators have reference
+documents to help define a shared understanding of the scope, practices,
+and rules that govern these collections. These practices can prove
+useful in a variety of situations, including, but not limited to,
+presenting the contents in the resource to stakeholders and community
+members, reassuring potential contributors by clarifying sensitive
+issues such as attribution, and defining how content in a registry or
+repository can be (re)used by others.
+
+The best practices presented here were proposed and developed by a Task
+Force of the
+\href{https://github.com/force11/force11-sciwg}{\emph{FORCE11 Software
+Citation Implementation Working Group}} that was composed of managers
+and editors of scientific software registries and repositories during a
+series of monthly conference calls in 2019. The Task Force's results
+were further developed during the
+\href{https://asclnet.github.io/SWRegistryWorkshop/}{\emph{Scientific
+Software Registry Collaboration Workshop}}, a two-day workshop held
+November 13-14, 2019 at the University of Maryland before being refined
+further in virtual meetings and through online collaborative writing in
+2020.
+
+Each guideline is presented below with an explanation as to why we
+recommend the practice, what the practice describes or contains, and
+specific considerations to take into account. Examples of each practice
+are provided at the end of the document. Throughout this guide, we refer
+to registries and repositories collectively as ``resources'' and
+``collections.''
+
+Although our recommendations are partitioned into nine separate policies
+or statements, there is inevitable overlap between some of them. In
+practice, the statements and policies are often combined into a smaller
+number of documents, as most of our real-world examples demonstrate.
+
+This guide is not an exhaustive list of best practices, but we feel that
+adopting those suggested here will help better document, guide, and
+preserve scientific software registries and repositories, putting them
+in a stronger position to serve their disciplines, users, and
+communities.
+
+\newpage
+\section{Best Practice: Provide a public scope
+statement}\label{best-practice-provide-a-public-scope-statement}
+
+\textbf{Why we recommend this}: A scope statement clarifies the type of
+software contained in the repository or indexed in the registry. This
+manages the expectations of the potential depositor of metadata and/or
+software, as well as the resource seeker. It informs both of what the
+collection does and does not contain.
+
+\textbf{This should describe}:
+
+\begin{itemize}
+\item
+  \begin{quote}
+  What is accepted, and acceptable
+  \end{quote}
+\item
+  \begin{quote}
+  What is not accepted
+  \end{quote}
+\item
+  \begin{quote}
+  Exceptions to either/both of the above if necessary
+  \end{quote}
+\end{itemize}
+
+\textbf{What you might consider when writing a scope statement: }
+
+\begin{itemize}
+\item
+  \begin{quote}
+  The types of software listed in the registry or stored in the
+  repository, such as source code or compiled executables
+  \end{quote}
+\item
+  \begin{quote}
+  Defining the community being served
+  \end{quote}
+\item
+  \begin{quote}
+  Criteria that must be satisfied by accepted software, such as whether
+  certain software quality metrics must be fulfilled or whether the
+  software must be used in published research
+  \end{quote}
+\item
+  \begin{quote}
+  Whether the code has to be in the public domain and/or have a license
+  from a predefined set
+  \end{quote}
+\item
+  \begin{quote}
+  Whether software registered in another registry or repository will be
+  accepted
+  \end{quote}
+\end{itemize}
+
+\section{}\label{section}
+
+\section{}\label{section-1}
+
+\section{}\label{section-2}
+
+\section{\texorpdfstring{\\
+}{ }}\label{section-3}
+
+\newpage
+\section{Best Practice: Provide guidance for users
+}\label{best-practice-provide-guidance-for-users}
+
+\textbf{Why we recommend this}: Different users of the registry or
+repository will benefit from guidance on how to access the information
+they are interested in. For example, it is useful to describe how to
+search the collection, answer frequently asked questions (FAQs), provide
+tips and tricks, and to let users know who to contact for
+assistance.\\[2\baselineskip]A separate section in these guidelines on
+the \emph{Conditions of use policy} covers terms of use of the
+collection, including data and API, and how best to cite records in the
+resource and the resource itself. Guidance for users who wish to
+contribute software is covered in the next section, \emph{Provide
+guidance to software contributors}.
+
+\textbf{This should describe}:
+
+\begin{itemize}
+\item
+  \begin{quote}
+  How to perform common user tasks
+  \end{quote}
+\item
+  \begin{quote}
+  Answers to questions that are often asked or can be anticipated
+  \end{quote}
+\item
+  \begin{quote}
+  Whom to contact for questions or help
+  \end{quote}
+\end{itemize}
+
+\textbf{What you might consider when writing guidance for users:}
+
+\begin{itemize}
+\item
+  \begin{quote}
+  Identifying the types of users your resource has or could potentially
+  have, and corresponding use cases
+  \end{quote}
+\item
+  \begin{quote}
+  Offering multiple forms of guidance, such as in-field prompts, linked
+  explanations, and completed examples
+  \end{quote}
+\item
+  \begin{quote}
+  If there is an API, including a description specifying the interface
+  or a pointer to the official documentation for the interface
+  \end{quote}
+\item
+  \begin{quote}
+  If content negotiation is enabled, stating what formats, such as
+  JSON-LD or XML, are supported
+  \end{quote}
+\end{itemize}
+
+\section{\texorpdfstring{\\
+}{ }}\label{section-4}
+
+\newpage
+\section{Best Practice: Provide guidance to software
+contributors}\label{best-practice-provide-guidance-to-software-contributors}
+
+\textbf{Why we recommend this:} People interested in contributing
+software entries to the registry or repository need to know what the
+process entails. The scope statement will already have explained
+\emph{what} is accepted and what is not; the contributor policy
+addresses \emph{who} can add or change software entries, and the
+processes involved.
+
+\textbf{This should describe}:
+
+\begin{itemize}
+\item
+  \begin{quote}
+  Who can or cannot submit entries and/or metadata
+  \end{quote}
+\item
+  \begin{quote}
+  Required and optional metadata expected from software contributors
+  \end{quote}
+\item
+  \begin{quote}
+  Review process, if any
+  \end{quote}
+\item
+  \begin{quote}
+  Curation process, if any
+  \end{quote}
+\item
+  \begin{quote}
+  Procedures for updates (e.g., who can do it, when it is done, how is
+  it done)
+  \end{quote}
+\end{itemize}
+
+\textbf{What you might consider when writing a contributor policy}:
+
+\begin{itemize}
+\item
+  \begin{quote}
+  Defining who can submit and/or update entries
+  \end{quote}
+\item
+  \begin{quote}
+  Whether the author(s) of the software will be contacted if the
+  contributor is not also an author, and whether contact is a condition
+  or side-effect of the submission
+  \end{quote}
+\item
+  \begin{quote}
+  Stating how persistent identifiers, if used, are assigned
+  \end{quote}
+\item
+  \begin{quote}
+  Including a statement that depositors must comply with all applicable
+  laws and not be intentionally malicious
+  \end{quote}
+\end{itemize}
+
+\section{\texorpdfstring{\\
+}{ }}\label{section-5}
+
+\newpage
+\section{Best Practice: Establish an authorship
+policy}\label{best-practice-establish-an-authorship-policy}
+
+\textbf{Why we recommend this}: Establishing a policy dedicated to
+authorship ensures that people are given due credit for their work. It
+also serves as a document that administrators can turn to in case
+authorial disputes arise and allows for proactive problem mitigation,
+rather than having to resort to reactive interpretation. Further, having
+an authorship policy is in keeping with similar policies by journals and
+publishers. Having such explicit authorship policies is thus part of a
+larger trend. Note that the authorship policy will be at least partially
+communicated to users through guidance provided to software
+contributors.
+
+\textbf{This should describe}:
+
+\begin{itemize}
+\item
+  \begin{quote}
+  Who should be listed as an author of the software
+  \end{quote}
+\item
+  \begin{quote}
+  Policies around making changes to authorship
+  \end{quote}
+\item
+  \begin{quote}
+  How authorship disputes are handled
+  \end{quote}
+\item
+  \begin{quote}
+  What the resource will do in case of conflict
+  \end{quote}
+\end{itemize}
+
+\textbf{What you might consider when writing an authorship policy:}
+
+\begin{itemize}
+\item
+  \begin{quote}
+  Who should be listed as an author of the software, taking into
+  consideration whether those who are not coders, such as software
+  testers or documentation maintainers, will be identified or credited,
+  as well as criteria for ordering the list of authors in cases of
+  multiple authors
+  \end{quote}
+\item
+  \begin{quote}
+  How the resource handles large numbers of authors and group or
+  consortium authorship
+  \end{quote}
+\item
+  \begin{quote}
+  Including guidelines about how changes to authorship are handled
+  \end{quote}
+\item
+  \begin{quote}
+  What role the registry will play, if any, in authorship disputes, and
+  if so, how they are handled
+  \end{quote}
+\item
+  \begin{quote}
+  Maintaining consistency with the citation policies for the
+  registry/repository
+  \end{quote}
+\item
+  \begin{quote}
+  Using a credit ontology (\emph{e.g.},
+  \href{https://casrai.org/credit/}{\emph{CRediT Contributor Roles
+  Ontology}}) to describe authors' contributions
+  \end{quote}
+\end{itemize}
+
+\section{\texorpdfstring{\\
+}{ }}\label{section-6}
+
+\newpage
+\section{Best Practice: Share your metadata
+schema}\label{best-practice-share-your-metadata-schema}
+
+\textbf{Why we recommend this}: For individual and organizational users
+interested in the information in registries and repositories, revealing
+the metadata schema used for the entries helps users understand the
+structure and properties of the deposited information. The metadata
+structure helps to inform users how they might interact with or ingest
+records in the collection. A metadata schema mapped to other schemas and
+an API specification can improve the interoperability between registries
+and repositories.
+
+\textbf{This should describe}:
+
+\begin{itemize}
+\item
+  \begin{quote}
+  What schema is used (e.g.,
+  \href{https://codemeta.github.io/}{\emph{CodeMeta}},
+  \href{https://schema.org/}{\emph{Schema.org}}) and its version number
+  if a published standard schema is used, or, if a custom schema is
+  used, a description of the schema and/or a data dictionary
+  \end{quote}
+\item
+  \begin{quote}
+  Where the metadata documentation or its official site can be found
+  (typically a link)
+  \end{quote}
+\item
+  \begin{quote}
+  What metadata is expected when submitting software, including which
+  fields are required and which are optional, and the format of the
+  content in each field
+  \end{quote}
+\end{itemize}
+
+\textbf{What you might consider when stating your metadata schema:}
+
+\begin{itemize}
+\item
+  \begin{quote}
+  Using a metadata schema that is mapped (``cross-walked'') to published
+  standard schemas, or providing a cross-walk between your schema and
+  other schemas
+  \end{quote}
+\item
+  \begin{quote}
+  Providing an example of the metadata schema with a complete entry in
+  your repository that illustrates all the fields of the schema
+  \end{quote}
+\end{itemize}
+
+\newpage
+\section{Best Practice: Stipulate conditions of use
+}\label{best-practice-stipulate-conditions-of-use}
+
+\textbf{Why we recommend this}: A conditions of use policy lets users of
+your resource know how the metadata of the registry or repository can be
+used, attributed, and/or cited. It provides information about licensing
+and forestalls any potential difficulties and/or liabilities, such as
+claims of damage for misinterpretation or misapplication of metadata,
+that may arise. In turn, it clearly states how the metadata can and
+cannot be used, including for commercial purposes and in aggregate form.
+
+\textbf{This should describe}:
+
+\begin{itemize}
+\item
+  \begin{quote}
+  Legal disclaimers about the responsibility and liability borne by the
+  registry or repository
+  \end{quote}
+\item
+  \begin{quote}
+  License and copyright information, both for individual entries and for
+  the registry or repository as a whole
+  \end{quote}
+\item
+  \begin{quote}
+  Conditions for the use of the metadata, including prohibitions, if any
+  \end{quote}
+\item
+  \begin{quote}
+  Preferred format for citing software entries
+  \end{quote}
+\item
+  \begin{quote}
+  Preferred format for attributing or citing the resource itself
+  \end{quote}
+\end{itemize}
+
+\textbf{What you might consider when writing a conditions of use
+policy:}
+
+\begin{itemize}
+\item
+  \begin{quote}
+  What license governs your metadata, and whether there are licensing
+  requirements for findings and/or derivatives of the resource
+  \end{quote}
+\item
+  \begin{quote}
+  Whether there are differences in the terms and license for commercial
+  versus noncommercial use
+  \end{quote}
+\item
+  \begin{quote}
+  Conditions for the use of the API if one is available
+  \end{quote}
+\item
+  \begin{quote}
+  Restrictions on use of the metadata
+  \end{quote}
+\item
+  \begin{quote}
+  Including a statement to the effect that the registry or repository
+  makes no guarantees about completeness and is not liable for any
+  damages that may arise from the use of the information
+  \end{quote}
+\end{itemize}
+
+\section{\texorpdfstring{\\
+}{ }}\label{section-7}
+
+\newpage
+\section{Best Practice: State a privacy
+policy}\label{best-practice-state-a-privacy-policy}
+
+\textbf{Why we recommend this:} Having a privacy policy demonstrates a
+strong commitment to the privacy of users of the registry or repository,
+and allows the resource to comply with the legal requirement of many
+countries, in addition to those a home institution and/or funding
+agencies may impose. A privacy policy discloses what information,
+analytics, and metrics a registry collects and/or retains about its
+users and why.
+
+\textbf{This should describe}:
+
+\begin{itemize}
+\item
+  \begin{quote}
+  What information is collected and how long it is retained
+  \end{quote}
+\item
+  \begin{quote}
+  How the information, especially any personal data, is used
+  \end{quote}
+\item
+  \begin{quote}
+  Whether tracking is done, what is tracked, and how (e.g., Google
+  Analytics)
+  \end{quote}
+\item
+  \begin{quote}
+  Whether cookies are used
+  \end{quote}
+\end{itemize}
+
+\textbf{What you might consider when writing a privacy policy:}
+
+\begin{itemize}
+\item
+  \begin{quote}
+  Detailing the specific data collected, why it is collected, and
+  whether it is shared or sold
+  \end{quote}
+\item
+  \begin{quote}
+  Being explicit about third party tools used to collect analytic
+  information and potentially referencing their privacy policies
+  \end{quote}
+\item
+  \begin{quote}
+  Stating whether users will receive email as a result of visiting or
+  downloading content
+  \end{quote}
+\item
+  \begin{quote}
+  Explaining the measures taken to protect users' privacy, and whether
+  the resource complies with the
+  \href{https://gdpr-info.eu/}{\emph{European Union Directive on General
+  Data Protection Regulation}} (GDPR) or other local laws, if applicable
+  \end{quote}
+\item
+  \begin{quote}
+  Reserving the right to make changes to the Privacy Policy
+  \end{quote}
+\item
+  \begin{quote}
+  Defining a mechanism by which users can request information be removed
+  \end{quote}
+\end{itemize}
+
+\section{\texorpdfstring{\\
+}{ }}\label{section-8}
+
+\newpage
+\section{Best Practice: Provide a retention
+policy}\label{best-practice-provide-a-retention-policy}
+
+\textbf{Why we recommend this}: Software registries and repositories
+make an implicit promise to retain records for some period of time, but
+for various reasons may have to remove records. Common examples include
+removing entries that are outdated or no longer meet the scope of the
+registry or are found to be in violation of policies. The collection
+should document retention goals so that users and depositors are aware
+of them.
+
+\textbf{This should describe}:
+
+\begin{itemize}
+\item
+  \begin{quote}
+  The length of time metadata and/or files are expected to be retained
+  \end{quote}
+\item
+  \begin{quote}
+  Under what conditions metadata and/or files are removed
+  \end{quote}
+\item
+  \begin{quote}
+  Who has the responsibility and ability to remove information
+  \end{quote}
+\item
+  \begin{quote}
+  Procedures to request that metadata and/or files be removed
+  \end{quote}
+\end{itemize}
+
+\textbf{What you might consider when writing a retention policy:}
+
+\begin{itemize}
+\item
+  \begin{quote}
+  If assigning identifiers, whether best practices for persistent
+  identifiers are followed, including resolvability, retention, and
+  non-reuse of those identifiers
+  \end{quote}
+\item
+  \begin{quote}
+  Making sure the length of time is not too prescriptive (e.g., ``for
+  the next 10 years''), but rather fits within the context of the
+  underlying organization(s) and its funding
+  \end{quote}
+\item
+  \begin{quote}
+  Stating who is allowed to edit metadata, delete records, or delete
+  files, and if so, how these changes are documented and consistent with
+  the registry broadly
+  \end{quote}
+\item
+  \begin{quote}
+  Explaining the process by which data may be taken offline and archived
+  as well as the process for its possible retrieval
+  \end{quote}
+\end{itemize}
+
+\section{\texorpdfstring{\\
+}{ }}\label{section-9}
+
+\newpage
+\section{Best Practice: Disclose your end-of-life
+policy}\label{best-practice-disclose-your-end-of-life-policy}
+
+\textbf{Why we recommend this}: Sharing a clear end-of-life policy
+increases trust in the community served by your registry or repository.
+It demonstrates a thoughtful commitment to users by informing them that
+provisions for the artifacts contained in the resource have been
+considered should the resource close or otherwise end its services for
+these artifacts. Such a policy sets expectations and provides
+reassurance as to how long the records within the resource will be
+findable and accessible in the future.
+
+\textbf{This should describe}:
+
+\begin{itemize}
+\item
+  \begin{quote}
+  Under what circumstances the resource might end its services
+  \end{quote}
+\item
+  \begin{quote}
+  What consequences would result from closure
+  \end{quote}
+\item
+  \begin{quote}
+  What will happen to the metadata and/or the software artifacts
+  contained in the resource in the event of closure
+  \end{quote}
+\item
+  \begin{quote}
+  If long-term preservation is expected, where metadata and/or software
+  artifacts will be migrated for preservation
+  \end{quote}
+\item
+  \begin{quote}
+  How a migration will be funded
+  \end{quote}
+\end{itemize}
+
+\textbf{What you might consider when writing a end-of-life policy:}
+
+\begin{itemize}
+\item
+  \begin{quote}
+  Whether the records will remain available, and if so, how and for
+  whom, and under which conditions, such as archived status or ``read
+  only'', should the collection close
+  \end{quote}
+\item
+  \begin{quote}
+  What restrictions, if any, may apply
+  \end{quote}
+\item
+  \begin{quote}
+  Establishing a formal agreement or MOU with another registry,
+  repository, or institution to receive and preserve the data or
+  project, if applicable
+  \end{quote}
+\end{itemize}
+
+\section{\texorpdfstring{\\
+}{ }}\label{section-10}
+
+\newpage
+\section{Policy examples}\label{policy-examples}
+
+\subsection{Scope Statement}\label{scope-statement}
+
+\begin{quote}
+Astrophysics Source Code Library. (n.d.). \emph{Editorial policy}.
+\href{https://ascl.net/wordpress/submissions/editiorial-policy/}{\emph{https://ascl.net/wordpress/submissions/editiorial-policy/}}
+
+bio.tools. (n.d.). \emph{Curators Guide}.
+\href{https://biotools.readthedocs.io/en/latest/curators_guide.html}{\emph{https://biotools.readthedocs.io/en/latest/curators\_guide.html}}
+
+Caltech Library. (2017). \emph{Terms of Deposit}.
+\href{https://data.caltech.edu/terms}{\emph{https://data.caltech.edu/terms}}
+
+Caltech Library. (2019). \emph{CaltechDATA FAQ}. Caltech Library.
+\href{https://www.library.caltech.edu/caltechdata/faq}{\emph{https://www.library.caltech.edu/caltechdata/faq}}
+
+Computational Infrastructure for Geodynamics. (n.d.). \emph{Code
+Donation}.
+\href{https://geodynamics.org/cig/dev/code-donation/}{\emph{https://geodynamics.org/cig/dev/code-donation/}}
+
+CoMSES Net Computational Model Library. (n.d.). \emph{Frequently Asked
+Questions}.
+\href{https://www.comses.net/about/faq/\#model-library}{\emph{https://www.comses.net/about/faq/\#model-library}}
+
+ORNL DAAC for Biogeochemical Dynamics. (n.d.). \emph{Data Scope and
+Acceptance Policy}.
+\href{https://daac.ornl.gov/submit/}{\emph{https://daac.ornl.gov/submit/}}
+
+RDA Registry and Research Data Australia. (2018). \emph{Collection}.
+ARDC Intranet.
+\href{https://intranet.ands.org.au/display/DOC/Collection}{\emph{https://intranet.ands.org.au/display/DOC/Collection}}
+
+Remote Sensing Code Library. (n.d.). \emph{Submit}.
+\href{https://rscl-grss.org/submit.php}{\emph{https://rscl-grss.org/submit.php}}
+
+SciCrunch. (n.d.). \emph{Curation Guide for SciCrunch Registry}.
+\href{https://scicrunch.org/page/Curation\%20Guidelines}{\emph{https://scicrunch.org/page/Curation\%20Guidelines}}
+
+U.S. Department of Energy: Office of Scientific and Technical
+Information. (n.d.-a). \emph{DOE CODE: Software Policy}.
+\href{https://www.osti.gov/doecode/policy}{\emph{https://www.osti.gov/doecode/policy}}
+
+U.S. Department of Energy: Office of Scientific and Technical
+Information. (n.d.-b). \emph{FAQs}. OSTI.GOV.
+\href{https://www.osti.gov/faqs}{\emph{https://www.osti.gov/faqs}}
+\end{quote}
+
+\subsection{Authorship}\label{authorship}
+
+\begin{quote}
+CASRAI. (n.d.). CRediT - Contributor Roles Taxonomy. \emph{CASRAI}.
+\href{https://casrai.org/credit/}{\emph{https://casrai.org/credit/}}
+
+Committee on Publication Ethics: COPE. (2020a). \emph{Authorship and
+contributorship}.
+\href{https://publicationethics.org/authorship}{\emph{https://publicationethics.org/authorship}}
+
+Committee on Publication Ethics: COPE. (2020b). \emph{Core practices}.
+\href{https://publicationethics.org/core-practices}{\emph{https://publicationethics.org/core-practices}}
+
+Dagstuhl EAS Specification Draft. (2016). \emph{The Software Credit
+Ontology}.
+\href{https://dagstuhleas.github.io/SoftwareCreditRoles/doc/index-en.html\#}{\emph{https://dagstuhleas.github.io/SoftwareCreditRoles/doc/index-en.html\#}}
+
+Journal of Open Source Software. (n.d.). \emph{Ethics Guidelines}.
+\href{https://joss.theoj.org/about\#ethics}{\emph{https://joss.theoj.org/about\#ethics}}
+
+ORNL DAAC (n.d) \emph{Authorship Policy}.
+\emph{https://daac.ornl.gov/submit/}
+
+PeerJ Journals. (n.d.-a). \emph{Author Policies}.
+\href{https://peerj.com/about/policies-and-procedures/\#author-policies}{\emph{https://peerj.com/about/policies-and-procedures/\#author-policies}}
+
+PeerJ Journals. (n.d.-b). \emph{Publication Ethics}.
+\href{https://peerj.com/about/policies-and-procedures/\#publication-ethics}{\emph{https://peerj.com/about/policies-and-procedures/\#publication-ethics}}
+
+PLOS ONE. (n.d.). \emph{Authorship}.
+\href{https://journals.plos.org/plosone/s/authorship}{\emph{https://journals.plos.org/plosone/s/authorship}}
+
+The Contributor Role Ontology,
+\href{https://github.com/data2health/contributor-role-ontology}{\emph{https://github.com/data2health/contributor-role-ontology}}
+\end{quote}
+
+\subsection{Metadata Schema}\label{metadata-schema}
+
+\begin{quote}
+ANDS: Australian National Data Service. (n.d.). \emph{Metadata}. ANDS.
+\href{https://www.ands.org.au/working-with-data/metadata}{\emph{https://www.ands.org.au/working-with-data/metadata}}
+
+ANDS: Australian National Data Service. (2016). \emph{ANDS Guide:
+Metadata}.
+\href{https://www.ands.org.au/__data/assets/pdf_file/0004/728041/Metadata-Workinglevel.pdf}{\emph{https://www.ands.org.au/\_\_data/assets/pdf\_file/0004/728041/Metadata-Workinglevel.pdf}}
+
+Bernal, I. (2019). \emph{Metadata for Data Repositories}.
+\href{https://doi.org/10.5281/zenodo.3233486}{\emph{https://doi.org/10.5281/zenodo.3233486}}
+
+bio.tools. (2020). \emph{Bio-tools/biotoolsSchema} {[}HTML{]}.
+bio.tools.
+\href{https://github.com/bio-tools/biotoolsSchema}{\emph{https://github.com/bio-tools/biotoolsSchema}}
+(Original work published 2015)
+
+bio.tools. (2019). \emph{BiotoolsSchema documentation}.
+\href{https://biotoolsschema.readthedocs.io/en/latest/}{\emph{https://biotoolsschema.readthedocs.io/en/latest/}}
+
+The CodeMeta crosswalks. (n.d.)
+\href{https://codemeta.github.io/crosswalk/}{\emph{https://codemeta.github.io/crosswalk/}}
+
+Citation File Format (CFF). (n.d.)
+\href{https://doi.org/10.5281/zenodo.1003149}{\emph{https://doi.org/10.5281/zenodo.1003149}}
+
+The DataVerse Project. (2020). DataVerse 4.0+ Metadata Crosswalk.
+\href{https://docs.google.com/spreadsheets/d/10Luzti7svVTVKTA-px27oq3RxCUM-QbiTkm8iMd5C54/edit\#gid=587531992}{\emph{https://docs.google.com/spreadsheets/d/10Luzti7svVTVKTA-px27oq3RxCUM-QbiTkm8iMd5C54/edit\#gid=587531992}}
+
+OntoSoft. (2015). \emph{OntoSoft Ontology}.
+\href{https://ontosoft.org/ontology/software/}{\emph{https://ontosoft.org/ontology/software/}}
+
+OpenAPI Specification. (2020).
+\href{http://spec.openapis.org/oas/v3.0.3}{\emph{http://spec.openapis.org/oas/v3.0.3}}
+
+Zenodo. (n.d.-a). \emph{Schema for Depositing}.
+\href{https://zenodo.org/schemas/records/record-v1.0.0.json}{\emph{https://zenodo.org/schemas/records/record-v1.0.0.json}}
+
+Zenodo. (n.d.-b). \emph{Schema for Published Record}.
+\href{https://zenodo.org/schemas/deposits/records/legacyrecord.json}{\emph{https://zenodo.org/schemas/deposits/records/legacyrecord.json}}
+\end{quote}
+
+\subsection{Conditions of use policy}\label{conditions-of-use-policy}
+
+\begin{quote}
+Allen Institute. (n.d.). \emph{Terms of Use}.
+\href{https://alleninstitute.org/legal/terms-use/}{\emph{https://alleninstitute.org/legal/terms-use/}}
+
+Europeana. (n.d.). \emph{Usage Guidelines for Metadata}. Europeana
+Collections.
+\href{https://www.europeana.eu/portal/en/rights/metadata.html}{\emph{https://www.europeana.eu/portal/en/rights/metadata.html}}
+
+U.S. Department of Energy: Office of Scientific and Technical
+Information. (n.d.). \emph{DOE CODE FAQ: Are there restrictions on the
+use of the material in DOE CODE?}
+\href{https://www.osti.gov/doecode/faq\#are-there-restrictions}{\emph{https://www.osti.gov/doecode/faq\#are-there-restrictions}}
+
+Zenodo. (n.d.). \emph{Terms of Use}.
+\href{https://about.zenodo.org/terms/}{\emph{https://about.zenodo.org/terms/}}
+\end{quote}
+
+\subsection{Privacy policy}\label{privacy-policy}
+
+\begin{quote}
+Allen Institute. (n.d.). \emph{Privacy Policy}.
+\href{https://alleninstitute.org/legal/privacy-policy/}{\emph{https://alleninstitute.org/legal/privacy-policy/}}
+
+CoMSES Net. (n.d.). \emph{Data Privacy Policy.
+\url{https://www.comses.net/about/data-privacy/}}
+
+Nature. (2020). \emph{Privacy Policy}.
+\href{https://www.nature.com/info/privacy}{\emph{https://www.nature.com/info/privacy}}
+
+Research Data Australia. (n.d.). \emph{Privacy Policy}. Research Data
+Australia.
+\href{https://researchdata.ands.org.au/page/privacy}{\emph{https://researchdata.ands.org.au/page/privacy}}
+
+SciCrunch. (2018). \emph{Privacy Policy}. SciCrunch.
+\href{https://scicrunch.org/page/privacy}{\emph{https://scicrunch.org/page/privacy}}
+
+Science Repository. (n.d.). \emph{Privacy Policies}.
+\href{https://www.sciencerepository.org/privacy}{\emph{https://www.sciencerepository.org/privacy}}
+
+Zenodo. (n.d.). \emph{Privacy policy}.
+\href{https://about.zenodo.org/privacy-policy/}{\emph{https://about.zenodo.org/privacy-policy/}}
+\end{quote}
+
+\subsection{Retention Policy}\label{retention-policy}
+
+\begin{quote}
+Caltech Library. (n.d.). \emph{CaltechDATA FAQ}. Caltech Library.
+\href{https://www.library.caltech.edu/caltechdata/faq}{\emph{https://www.library.caltech.edu/caltechdata/faq}}
+
+CoMSES Net Computational Model Library. (n.d.). \emph{How long will
+models be stored in the Computational Model Library?
+\href{https://www.comses.net/about/faq/}{\emph{https://www.comses.net/about/faq/}}}
+
+Dryad. (2020). \emph{Dryad FAQ - Publish and Preserve your Data}.
+\href{https://datadryad.org/stash/faq\#preserved}{\emph{https://datadryad.org/stash/faq\#preserved}}
+
+Software Heritage. (n.d.). \emph{Content policy}.
+\href{https://www.softwareheritage.org/legal/content-policy/}{\emph{https://www.softwareheritage.org/legal/content-policy/}}
+
+Zenodo. (n.d.). \emph{General Policies v1.0}.
+\href{https://about.zenodo.org/policies/}{\emph{https://about.zenodo.org/policies/}}
+
+Bioconductor. (2020). \emph{Package End of Life Policy.
+\url{https://bioconductor.org/developers/package-end-of-life/} }
+\end{quote}
+
+\subsection{End-of-life policy}\label{end-of-life-policy}
+
+\begin{quote}
+Figshare. (n.d.). \emph{Preservation and Continuity of Access Policy}.
+\href{https://knowledge.figshare.com/articles/item/preservation-and-continuity-of-access-policy}{\emph{https://knowledge.figshare.com/articles/item/preservation-and-continuity-of-access-policy}}
+
+Open Science Framework. (2019). \emph{FAQs}. OSF Guides.
+\href{http://help.osf.io/hc/en-us/articles/360019737894-FAQs}{\emph{http://help.osf.io/hc/en-us/articles/360019737894-FAQs}}
+
+NASA Earth Science Data Preservation Content Specification (n.d.)
+\emph{\url{https://earthdata.nasa.gov/esdis/eso/standards-and-references/preservation-content-spec}
+}
+
+Zenodo. (n.d.). \emph{Frequently Asked Questions}.
+\href{https://help.zenodo.org/}{\emph{https://help.zenodo.org/}}
+\end{quote}
+
+\section{\texorpdfstring{\\
+}{ }}\label{section-11}
+
+\newpage
+\section{Additional useful sites }\label{additional-useful-sites}
+
+In addition to the links to sites and information embedded in this
+Concise Guide, the following sites are directly applicable to the best
+practices we have listed.
+
+{[}Authorship{]} Citation File Format:
+\href{https://citation-file-format.github.io/}{\emph{https://citation-file-format.github.io/}}
+
+{[}Authorship{]} CiteAs:
+\href{https://citeas.org/}{\emph{https://citeas.org/}}
+
+{[}Metadata Schema{]} Software Heritage Metadata workflow:
+\href{https://docs.softwareheritage.org/devel/swh-indexer/metadata-workflow.html}{\emph{https://docs.softwareheritage.org/devel/swh-indexer/metadata-workflow.html}}
+
+{[}Metadata Schema{]} W3C data profile definition:
+\href{https://www.w3.org/TR/dx-prof-conneg/\#dfn-data-profile}{\emph{https://www.w3.org/TR/dx-prof-conneg/\#dfn-data-profile}}
+
+You may also be interested in the
+\href{https://www.coretrustseal.org/why-certification/requirements/}{\emph{Core
+Trustworthy Data Repositories requirements}}, which are intended to
+reflect the characteristics of trustworthy repositories.
+
+\newpage
+\section{Glossary}\label{glossary}
+
+\textbf{API}: \href{https://en.wikipedia.org/wiki/API}{\emph{Application
+programming interface}}
+
+\textbf{Collection}: Used in this document as a synonym for
+\emph{registries and repositories}
+
+\textbf{Depositor}: A user who submits information and/or software to a
+registry or repository; synonymous with \emph{software contributor}
+
+\textbf{Entry}: Information about and/or software for a particular
+holding in a registry or repository; synonymous with \emph{record}
+
+\textbf{JSON-LD}:
+\href{https://en.wikipedia.org/wiki/JSON-LD}{\emph{JavaScript Object
+Notation for Linked Data}}
+
+\textbf{Metadata}: \emph{Information about a code or software package}
+
+\textbf{Record}: Information about and/or software for a particular
+holding in a registry or repository; synonymous with \emph{entry}
+
+\textbf{Registry}: Typically an index or catalog of software stored
+elsewhere
+
+\textbf{Repository}: Typically a site that both indexes and stores
+software
+
+\textbf{Resource}: Used in this document as a synonym for
+\emph{registries and repositories}
+
+\textbf{Software author}: A person who is credited as an author of a
+software package; this may include not only one who writes code, but
+also one who tests, documents, maintains, or otherwise contributes
+effort to the software package
+
+\textbf{Software contributor}: A user who submits information and/or
+software to a registry or repository; synonymous with \emph{depositor}
+
+\textbf{XML}: \href{https://en.wikipedia.org/wiki/XML}{\emph{Extensible
+Markup Language}}
+
+\newpage
+\section{Authors}\label{authors}
+
+Alain Monteil, INRIA: HAL/Software Heritage,
+\href{https://orcid.org/0000-0003-3150-4837}{\emph{https://orcid.org/0000-0003-3150-4837}}
+
+Alejandra Gonzalez-Beltran, Science and Technology Facilities Council,
+UK Research and Innovation:
+\href{https://orcid.org/0000-0003-3499-8262}{\emph{https://orcid.org/0000-0003-3499-8262}}
+
+Alexandros Ioannidis, CERN: Zenodo,
+\href{https://orcid.org/0000-0002-5082-6404}{\emph{https://orcid.org/0000-0002-5082-6404}}
+
+Alice Allen, Astrophysics Source Code Library,
+\href{https://orcid.org/0000-0003-3477-2845}{\emph{https://orcid.org/0000-0003-3477-2845}}
+
+Allen Lee, Arizona State University: CoMSES Net,
+\href{https://orcid.org/0000-0002-6523-6079}{\emph{https://orcid.org/0000-0002-6523-6079}}
+
+Anita Bandrowski, UCSD: SciCrunch,
+\href{https://orcid.org/0000-0002-5497-0243}{\emph{https://orcid.org/0000-0002-5497-0243}}
+
+Bruce E. Wilson, Oak Ridge National Laboratory, ORNL Distributed Active
+Archive Center for Biogeochemical Dynamics,
+\href{https://orcid.org/0000-0002-1421-1728}{\emph{https://orcid.org/0000-0002-1421-1728}}
+
+Bryce Mecum, NCEAS, UC Santa Barbara: CodeMeta,
+\href{https://orcid.org/0000-0002-0381-3766}{\emph{https://orcid.org/0000-0002-0381-3766}}
+
+Cai Fan Du, iSchool, University of Texas at Austin: CiteAs,
+\href{https://orcid.org/0000-0003-2538-607X}{\emph{https://orcid.org/0000-0003-2538-607X}}
+
+Carly Robinson, DOE-OSTI,
+\href{https://orcid.org/0000-0002-8523-1478}{\emph{https://orcid.org/0000-0002-8523-1478}}
+
+Daniel S. Katz, University of Illinois at Urbana-Champaign, Associate
+EiC for JOSS: FORCE11 Software Citation Implementation Working Group
+co-chair,
+\href{https://orcid.org/0000-0001-5934-7525}{\emph{https://orcid.org/0000-0001-5934-7525}}
+
+Daniel Garijo, Information Sciences Institute, University of Southern
+California: Ontosoft,
+\href{http://orcid.org/0000-0003-0454-7145}{\emph{http://orcid.org/0000-0003-0454-7145}}
+
+David Long, Brigham Young University: IEEE GRS Remote Sensing Code
+Library:
+\href{https://orcid.org/0000-0002-1852-3972}{\emph{https://orcid.org/0000-0002-1852-3972}}
+
+Genevieve Milliken, Health Sciences Library, New York University,
+\href{https://orcid.org/0000-0002-3057-0659}{\emph{https://orcid.org/0000-0002-3057-0659}}
+
+Hervé Ménager, Institut Pasteur: ELIXIR bio.tools,
+\href{https://orcid.org/0000-0002-7552-1009}{\emph{https://orcid.org/0000-0002-7552-1009}}
+
+Jessica Hausman, JPL PO.DAAC,
+\href{https://orcid.org/0000-0002-1861-1526}{\emph{https://orcid.org/0000-0002-1861-1526}}
+
+Jurriaan H. Spaaks, Netherlands eScience Center: Research Software
+Directory,
+\href{https://orcid.org/0000-0002-7064-4069}{\emph{https://orcid.org/0000-0002-7064-4069}}
+
+Katrina Fenlon, University of Maryland: iSchool,
+\href{https://orcid.org/0000-0003-1483-5335}{\emph{https://orcid.org/0000-0003-1483-5335}}
+
+Kristin Vanderbilt, Environmental Data Initiative: IMCR,
+\href{https://orcid.org/0000-0003-1439-2204}{\emph{https://orcid.org/0000-0003-1439-2204}}
+
+Lorraine Hwang, Computational Infrastructure for Geodynamics, UC Davis,
+\href{http://orcid.org/0000-0002-1021-3101}{\emph{http://orcid.org/0000-0002-1021-3101}}
+
+Lynn Davis, DOE-OSTI, \href{https://orcid.org/0000-0002-4670-0964}{\emph{https://orcid.org/0000-0002-4670-0964}}
+
+Martin Fenner, DataCite, FORCE11 Software Citation Implementation
+Working Group co-chair,
+\href{https://orcid.org/0000-0003-1419-2405}{\emph{https://orcid.org/0000-0003-1419-2405}}
+
+Michael R. Crusoe, CWL; Debian-Med,
+\href{https://orcid.org/0000-0002-2961-9670}{\emph{https://orcid.org/0000-0002-2961-9670}}
+
+Mike Hucka, Caltech, Caltech, SBML, COMBINE,
+\href{https://orcid.org/0000-0001-9105-5960}{\emph{https://orcid.org/0000-0001-9105-5960}}
+
+Mingfang Wu, Australian Research Data Commons,
+\href{https://orcid.org/0000-0003-1206-3431}{\emph{https://orcid.org/0000-0003-1206-3431}}
+
+Neil Chue Hong, SSI, FORCE11 Software Citation Implementation Working
+Group co-chair,
+\href{https://orcid.org/0000-0002-8876-7606}{\emph{https://orcid.org/0000-0002-8876-7606}}
+
+Peter Teuben, UMD,
+\href{https://orcid.org/0000-0003-1774-3436}{\emph{https://orcid.org/0000-0003-1774-3436}}
+
+Shelley Stall, AGU,
+\href{https://orcid.org/0000-0003-2926-8353}{\emph{https://orcid.org/0000-0003-2926-8353}}
+
+Stephan Druskat, German Aerospace Center (DLR)/University
+Jena/Humboldt-Universität zu Berlin: Citation File Format,
+\href{https://orcid.org/0000-0003-4925-7248}{\emph{https://orcid.org/0000-0003-4925-7248}}
+
+Ted Carnevale, Neuroscience Department, Yale: ModelDB
+
+Tom Morrell, Caltech: CaltechDATA,
+\href{https://orcid.org/0000-0001-9266-5146}{\emph{https://orcid.org/0000-0001-9266-5146}}
+
+\end{document}
