@@ -6,20 +6,25 @@
 \usepackage{fourier}
 \usepackage{setspace}
 
-\usepackage[letterpaper,top=0.75in,total={6.5in,9.5in}]{geometry}
+% Allow URLs to be broken after hyphens. This is potentially confusing
+% to readers (when they see a URL broken across lines, is the hyphen
+% part of the URL or just a hyphen?) but by carefully breaking lines
+% manually to avoid break URLs in most places, this option is useful
+% for the one or two places where a tough situation arises.
+% Note: This must specified before loading hyperref.
+\PassOptionsToPackage{hyphens}{url}
 
-\usepackage[pdftex,rgb,dvipsnames,svgnames,hyperref,table]{xcolor}
-\definecolor{darkblue}{rgb}{0,0.3,0.68}
+\usepackage[letterpaper,top=0.75in,total={6.5in,9.5in}]{geometry}
 
 \usepackage{microtype}
 \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
 
+\usepackage[pdftex,rgb,dvipsnames,svgnames,hyperref,table]{xcolor}
+\definecolor{darkblue}{rgb}{0,0.3,0.68}
+
 \usepackage[pdftex,breaklinks=true,colorlinks=true,
 bookmarks=false,pdfhighlight=/O,urlcolor=darkblue,
 linkcolor=darkblue,citecolor=mediumgreen]{hyperref}
-
-% Use sans serif font, not fixed-space font, for URLs. 
-\urlstyle{same}
 
 % Reduce spacing after section headings, remove section numbers.
 \usepackage{titlesec}
@@ -41,14 +46,17 @@ linkcolor=darkblue,citecolor=mediumgreen]{hyperref}
 \setlength{\partopsep}{-1ex plus 0.1ex minus -0.2ex}
 \setlength{\itemsep}{-0.25ex plus 0.15ex}
 
+% Use sans serif font, not fixed-space font, for URLs. 
+\urlstyle{same}
+
 % End of style customization.
 % ===========================================================================
 
 
-\title{Best Practices for Research Software Registries and Repositories:\\
+\title{\textls[-27]{Nine Best Practices for Research Software Registries and Repositories:}\\
 A Concise Guide}
 
-\author{\emph{Best Practices for Software Registries Task Force}}
+\author{}
 
 \begin{document}
 \maketitle
@@ -377,235 +385,249 @@ A separate section in these guidelines on the \emph{Conditions of use policy} co
 \subsection{Scope Statement}
 \label{scope-statement}
 
-Astrophysics Source Code Library. (n.d.). \emph{Editorial policy}.\\
+\begin{itemize}
+
+\item Astrophysics Source Code Library. (n.d.). \emph{Editorial policy}.\\
 \url{https://ascl.net/wordpress/submissions/editiorial-policy/}
 
-bio.tools. (n.d.). \emph{Curators Guide}.\\
+\item bio.tools. (n.d.). \emph{Curators Guide}.\\
 \url{https://biotools.readthedocs.io/en/latest/curators\_guide.html}
 
-Caltech Library. (2017). \emph{Terms of Deposit}.\\
+\item Caltech Library. (2017). \emph{Terms of Deposit}.\\
 \url{https://data.caltech.edu/terms}
 
-Caltech Library. (2019). \emph{CaltechDATA FAQ}. Caltech Library.\\
+\item Caltech Library. (2019). \emph{CaltechDATA FAQ}. Caltech Library.\\
 \url{https://www.library.caltech.edu/caltechdata/faq}
 
-Computational Infrastructure for Geodynamics. (n.d.). \emph{Code Donation}.\\
+\item Computational Infrastructure for Geodynamics. (n.d.). \emph{Code Donation}.\\
 \url{https://geodynamics.org/cig/dev/code-donation/}
 
-CoMSES Net Computational Model Library. (n.d.). \emph{Frequently Asked Questions}.\\
+\item CoMSES Net Computational Model Library. (n.d.). \emph{Frequently Asked Questions}.\\
 \url{https://www.comses.net/about/faq/\#model-library}
 
-ORNL DAAC for Biogeochemical Dynamics. (n.d.). 
+\item ORNL DAAC for Biogeochemical Dynamics. (n.d.). 
 \emph{Data Scope and Acceptance Policy}.\\
 \url{https://daac.ornl.gov/submit/}
 
-RDA Registry and Research Data Australia. (2018). \emph{Collection}.
+\item RDA Registry and Research Data Australia. (2018). \emph{Collection}.
 ARDC Intranet.\\
 \url{https://intranet.ands.org.au/display/DOC/Collection}
 
-Remote Sensing Code Library. (n.d.). \emph{Submit}.\\
+\item Remote Sensing Code Library. (n.d.). \emph{Submit}.\\
 \url{https://rscl-grss.org/submit.php}
 
-SciCrunch. (n.d.). \emph{Curation Guide for SciCrunch Registry}.\\
+\item SciCrunch. (n.d.). \emph{Curation Guide for SciCrunch Registry}.\\
 \url{https://scicrunch.org/page/Curation\%20Guidelines}
 
-\textls[-27]{U.S. Department of Energy: Office of Scientific and Technical
-Information. (n.d.-a). \emph{DOE CODE: Software Policy}.}\\
+\item U.S. Department of Energy: Office of Scientific and Technical Information. (n.d.-a). \emph{DOE CODE: Software Policy}.
 \url{https://www.osti.gov/doecode/policy}
 
-U.S. Department of Energy: Office of Scientific and Technical
+\item U.S. Department of Energy: Office of Scientific and Technical
 Information. (n.d.-b). \emph{FAQs}. OSTI.GOV.\\
 \url{https://www.osti.gov/faqs}
+
+\end{itemize}
 
 
 \vspace*{-2pt}
 \subsection{Authorship}
 \label{authorship}
 
-CASRAI. (n.d.). CRediT - Contributor Roles Taxonomy. \emph{CASRAI}.\\
+\begin{itemize}
+
+\item CASRAI. (n.d.). CRediT - Contributor Roles Taxonomy. \emph{CASRAI}.\\
 \url{https://casrai.org/credit/}
 
-Committee on Publication Ethics: COPE. (2020a). \emph{Authorship and
-contributorship}.\\
+\item Committee on Publication Ethics: COPE. (2020a). \emph{Authorship and contributorship}.\\
 \url{https://publicationethics.org/authorship}
 
-Committee on Publication Ethics: COPE. (2020b). \emph{Core practices}.\\
+\item Committee on Publication Ethics: COPE. (2020b). \emph{Core practices}.\\
 \url{https://publicationethics.org/core-practices}
 
-Dagstuhl EAS Specification Draft. (2016). \emph{The Software Credit
-Ontology}.\\
+\item Dagstuhl EAS Specification Draft. (2016). \emph{The Software Credit Ontology}.\\
 \url{https://dagstuhleas.github.io/SoftwareCreditRoles/doc/index-en.html\#}
 
-Journal of Open Source Software. (n.d.). \emph{Ethics Guidelines}.\\
+\item Journal of Open Source Software. (n.d.). \emph{Ethics Guidelines}.\\
 \url{https://joss.theoj.org/about\#ethics}
 
-ORNL DAAC (n.d) \emph{Authorship Policy}.\\
+\item ORNL DAAC (n.d) \emph{Authorship Policy}.\\
 \emph{https://daac.ornl.gov/submit/}
 
-PeerJ Journals. (n.d.-a). \emph{Author Policies}.\\
+\item PeerJ Journals. (n.d.-a). \emph{Author Policies}.\\
 \url{https://peerj.com/about/policies-and-procedures/\#author-policies}
 
-PeerJ Journals. (n.d.-b). \emph{Publication Ethics}.\\
+\item PeerJ Journals. (n.d.-b). \emph{Publication Ethics}.\\
 \url{https://peerj.com/about/policies-and-procedures/\#publication-ethics}
 
-PLOS ONE. (n.d.). \emph{Authorship}.\\
+\item PLOS ONE. (n.d.). \emph{Authorship}.\\
 \url{https://journals.plos.org/plosone/s/authorship}
 
-The Contributor Role Ontology,\\
+\item The Contributor Role Ontology,\\
 \url{https://github.com/data2health/contributor-role-ontology}
+
+\end{itemize}
 
 
 \vspace*{-2pt}
 \subsection{Metadata Schema}
 \label{metadata-schema}
 
-ANDS: Australian National Data Service. (n.d.). \emph{Metadata}. ANDS.\\
+\begin{itemize}
+
+\item ANDS: Australian National Data Service. (n.d.). \emph{Metadata}. ANDS.\\
 \url{https://www.ands.org.au/working-with-data/metadata}
 
-ANDS: Australian National Data Service. (2016). \emph{ANDS Guide:
-Metadata}.\\
+\item ANDS: Australian National Data Service. (2016). \emph{ANDS Guide: Metadata}.\\
 \url{https://www.ands.org.au/__data/assets/pdf_file/0004/728041/Metadata-Workinglevel.pdf}
 
-Bernal, I. (2019). \emph{Metadata for Data Repositories}.\\
+\item Bernal, I. (2019). \emph{Metadata for Data Repositories}.\\
 \url{https://doi.org/10.5281/zenodo.3233486}
 
-bio.tools. (2020). \emph{Bio-tools/biotoolsSchema} {[}HTML{]}.
-bio.tools.\\
+\item bio.tools. (2020). \emph{Bio-tools/biotoolsSchema} {[}HTML{]}. bio.tools.\\
 \url{https://github.com/bio-tools/biotoolsSchema}
 (Original work published 2015)
 
-bio.tools. (2019). \emph{BiotoolsSchema documentation}.\\
+\item bio.tools. (2019). \emph{BiotoolsSchema documentation}.\\
 \url{https://biotoolsschema.readthedocs.io/en/latest/}
 
-The CodeMeta crosswalks. (n.d.)\\
+\item The CodeMeta crosswalks. (n.d.)\\
 \url{https://codemeta.github.io/crosswalk/}
 
-Citation File Format (CFF). (n.d.)\\
+\item Citation File Format (CFF). (n.d.)\\
 \url{https://doi.org/10.5281/zenodo.1003149}
 
-The DataVerse Project. (2020). DataVerse 4.0+ Metadata Crosswalk.\\
+\item The DataVerse Project. (2020). DataVerse 4.0+ Metadata Crosswalk.\\
 \url{https://docs.google.com/spreadsheets/d/10Luzti7svVTVKTA-px27oq3RxCUM-QbiTkm8iMd5C54}
 
-OntoSoft. (2015). \emph{OntoSoft Ontology}.\\
+\item OntoSoft. (2015). \emph{OntoSoft Ontology}.\\
 \url{https://ontosoft.org/ontology/software/}
 
-OpenAPI Specification. (2020).\\
+\item OpenAPI Specification. (2020).\\
 \url{http://spec.openapis.org/oas/v3.0.3}
 
-Zenodo. (n.d.-a). \emph{Schema for Depositing}.\\
+\item Zenodo. (n.d.-a). \emph{Schema for Depositing}.\\
 \url{https://zenodo.org/schemas/records/record-v1.0.0.json}
 
-Zenodo. (n.d.-b). \emph{Schema for Published Record}.\\
+\item Zenodo. (n.d.-b). \emph{Schema for Published Record}.\\
 \url{https://zenodo.org/schemas/deposits/records/legacyrecord.json}
+
+\end{itemize}
 
 
 \vspace*{-2pt}
 \subsection{Conditions of use policy}
 \label{conditions-of-use-policy}
 
-Allen Institute. (n.d.). \emph{Terms of Use}.\\
+\begin{itemize}
+
+\item Allen Institute. (n.d.). \emph{Terms of Use}.\\
 \url{https://alleninstitute.org/legal/terms-use/}
 
-Europeana. (n.d.). \emph{Usage Guidelines for Metadata}. Europeana
-Collections.\\
+\item Europeana. (n.d.). \emph{Usage Guidelines for Metadata}. Europeana Collections.\\
 \url{https://www.europeana.eu/portal/en/rights/metadata.html}
 
-U.S. Department of Energy: Office of Scientific and Technical
-Information. (n.d.). \emph{DOE CODE FAQ: Are there restrictions on the
-use of the material in DOE CODE?}\\
+\item U.S. Department of Energy: Office of Scientific and Technical Information. (n.d.). \emph{DOE CODE FAQ: Are there restrictions on the use of the material in DOE CODE?}\\
 \url{https://www.osti.gov/doecode/faq\#are-there-restrictions}
 
-Zenodo. (n.d.). \emph{Terms of Use}.\\
+\item Zenodo. (n.d.). \emph{Terms of Use}.\\
 \url{https://about.zenodo.org/terms/}
+
+\end{itemize}
 
 
 \subsection{Privacy policy}
 \label{privacy-policy}
 
-Allen Institute. (n.d.). \emph{Privacy Policy}.\\
+\begin{itemize}
+
+\item Allen Institute. (n.d.). \emph{Privacy Policy}.\\
 \url{https://alleninstitute.org/legal/privacy-policy/}
 
-CoMSES Net. (n.d.). \emph{Data Privacy Policy.\\
+\item CoMSES Net. (n.d.). \emph{Data Privacy Policy.\\
 \url{https://www.comses.net/about/data-privacy/}}
 
-Nature. (2020). \emph{Privacy Policy}.\\
+\item Nature. (2020). \emph{Privacy Policy}.\\
 \url{https://www.nature.com/info/privacy}
 
-Research Data Australia. (n.d.). \emph{Privacy Policy}. Research Data
-Australia.\\
+\item Research Data Australia. (n.d.). \emph{Privacy Policy}. Research Data Australia.\\
 \url{https://researchdata.ands.org.au/page/privacy}
 
-SciCrunch. (2018). \emph{Privacy Policy}. SciCrunch.\\
+\item SciCrunch. (2018). \emph{Privacy Policy}. SciCrunch.\\
 \url{https://scicrunch.org/page/privacy}
 
-Science Repository. (n.d.). \emph{Privacy Policies}.\\
+\item Science Repository. (n.d.). \emph{Privacy Policies}.\\
 \url{https://www.sciencerepository.org/privacy}
 
-Zenodo. (n.d.). \emph{Privacy policy}.\\
+\item Zenodo. (n.d.). \emph{Privacy policy}.\\
 \url{https://about.zenodo.org/privacy-policy/}
+
+\end{itemize}
 
 
 \subsection{Retention Policy}
 \label{retention-policy}
 
-Caltech Library. (n.d.). \emph{CaltechDATA FAQ}. Caltech Library.\\
+\begin{itemize}
+
+\item Caltech Library. (n.d.). \emph{CaltechDATA FAQ}. Caltech Library.\\
 \url{https://www.library.caltech.edu/caltechdata/faq}
 
-CoMSES Net Computational Model Library. (n.d.). \emph{How long will
-models be stored in the Computational Model Library?\\
+\item CoMSES Net Computational Model Library. (n.d.). \emph{How long will models be stored in the Computational Model Library?\\
 \url{https://www.comses.net/about/faq/}}
 
-Dryad. (2020). \emph{Dryad FAQ - Publish and Preserve your Data}.\\
+\item Dryad. (2020). \emph{Dryad FAQ - Publish and Preserve your Data}.\\
 \url{https://datadryad.org/stash/faq\#preserved}
 
-Software Heritage. (n.d.). \emph{Content policy}.\\
+\item Software Heritage. (n.d.). \emph{Content policy}.\\
 \url{https://www.softwareheritage.org/legal/content-policy/}
 
-Zenodo. (n.d.). \emph{General Policies v1.0}.\\
+\item Zenodo. (n.d.). \emph{General Policies v1.0}.\\
 \url{https://about.zenodo.org/policies/}
 
-Bioconductor. (2020). \emph{Package End of Life Policy.\\
+\item Bioconductor. (2020). \emph{Package End of Life Policy.\\
 \url{https://bioconductor.org/developers/package-end-of-life/} }
+
+\end{itemize}
 
 
 \subsection{End-of-life policy}
 \label{end-of-life-policy}
 
-Figshare. (n.d.). \emph{Preservation and Continuity of Access Policy}.\\
+\begin{itemize}
+
+\item Figshare. (n.d.). \emph{Preservation and Continuity of Access Policy}.\\
 \url{https://knowledge.figshare.com/articles/item/preservation-and-continuity-of-access-policy}
 
-Open Science Framework. (2019). \emph{FAQs}. OSF Guides.\\
+\item Open Science Framework. (2019). \emph{FAQs}. OSF Guides.\\
 \url{http://help.osf.io/hc/en-us/articles/360019737894-FAQs}
 
-NASA Earth Science Data Preservation Content Specification (n.d.)\\
+\item NASA Earth Science Data Preservation Content Specification (n.d.)\\
 \url{https://earthdata.nasa.gov/esdis/eso/standards-and-references/preservation-content-spec}
 
-Zenodo. (n.d.). \emph{Frequently Asked Questions}.\\
+\item Zenodo. (n.d.). \emph{Frequently Asked Questions}.\\
 \url{https://help.zenodo.org/}
+
+\end{itemize}
 
 
 \section{Additional useful sites }
 \label{additional-useful-sites}
 
-In addition to the links to sites and information embedded in this
-Concise Guide, the following sites are directly applicable to the best
-practices we have listed.
+In addition to the links to sites and information embedded in this Concise Guide, the following sites are directly applicable to the best practices we have listed.
 
-{[}Authorship{]} Citation File Format:
-\url{https://citation-file-format.github.io/}
+\begin{itemize}
 
-{[}Authorship{]} CiteAs:
-\url{https://citeas.org/}
+\item (Authorship) Citation File Format: \url{https://citation-file-format.github.io/}
 
-{[}Metadata Schema{]} Software Heritage Metadata workflow:
-\url{https://docs.softwareheritage.org/devel/swh-indexer/metadata-workflow.html}
+\item (Authorship) CiteAs: \url{https://citeas.org/}
 
-{[}Metadata Schema{]} W3C data profile definition:
-\url{https://www.w3.org/TR/dx-prof-conneg/\#dfn-data-profile}
+\item (Metadata Schema) Software Heritage Metadata workflow: \url{https://docs.softwareheritage.org/devel/swh-indexer/metadata-workflow.html}
 
-You may also be interested in the
-\url{https://www.coretrustseal.org/why-certification/requirements/}, which are intended to
-reflect the characteristics of trustworthy repositories.
+\item (Metadata Schema) W3C data profile definition: \url{https://www.w3.org/TR/dx-prof-conneg/\#dfn-data-profile}
+
+\end{itemize}
+
+You may also be interested in the \url{https://www.coretrustseal.org/why-certification/requirements/}, which are intended to reflect the characteristics of trustworthy repositories.
 
 
 \section{Glossary}
@@ -613,39 +635,27 @@ reflect the characteristics of trustworthy repositories.
 
 \textbf{API}: \url{https://en.wikipedia.org/wiki/API}
 
-\textbf{Collection}: Used in this document as a synonym for
-\emph{registries and repositories}
+\textbf{Collection}: Used in this document as a synonym for \emph{registries and repositories}
 
-\textbf{Depositor}: A user who submits information and/or software to a
-registry or repository; synonymous with \emph{software contributor}
+\textbf{Depositor}: A user who submits information and/or software to a registry or repository; synonymous with \emph{software contributor}
 
-\textbf{Entry}: Information about and/or software for a particular
-holding in a registry or repository; synonymous with \emph{record}
+\textbf{Entry}: Information about and/or software for a particular holding in a registry or repository; synonymous with \emph{record}
 
-\textbf{JSON-LD}:
-\url{https://en.wikipedia.org/wiki/JSON-LD}
+\textbf{JSON-LD}: \url{https://en.wikipedia.org/wiki/JSON-LD}
 
 \textbf{Metadata}: \emph{Information about a code or software package}
 
-\textbf{Record}: Information about and/or software for a particular
-holding in a registry or repository; synonymous with \emph{entry}
+\textbf{Record}: Information about and/or software for a particular holding in a registry or repository; synonymous with \emph{entry}
 
-\textbf{Registry}: Typically an index or catalog of software stored
-elsewhere
+\textbf{Registry}: Typically an index or catalog of software stored elsewhere
 
-\textbf{Repository}: Typically a site that both indexes and stores
-software
+\textbf{Repository}: Typically a site that both indexes and stores software
 
-\textbf{Resource}: Used in this document as a synonym for
-\emph{registries and repositories}
+\textbf{Resource}: Used in this document as a synonym for \emph{registries and repositories}
 
-\textbf{Software author}: A person who is credited as an author of a
-software package; this may include not only one who writes code, but
-also one who tests, documents, maintains, or otherwise contributes
-effort to the software package
+\textbf{Software author}: A person who is credited as an author of a software package; this may include not only one who writes code, but also one who tests, documents, maintains, or otherwise contributes effort to the software package
 
-\textbf{Software contributor}: A user who submits information and/or
-software to a registry or repository; synonymous with \emph{depositor}
+\textbf{Software contributor}: A user who submits information and/or software to a registry or repository; synonymous with \emph{depositor}
 
 \textbf{XML}: \url{https://en.wikipedia.org/wiki/XML}
 
@@ -732,7 +742,7 @@ Working Group co-chair,\\
 Michael R. Crusoe, CWL; Debian-Med,
 \url{https://orcid.org/0000-0002-2961-9670}
 
-Mike Hucka, Caltech, Caltech, SBML, COMBINE,
+Mike Hucka, Caltech, SBML, COMBINE,
 \url{https://orcid.org/0000-0001-9105-5960}
 
 Mingfang Wu, Australian Research Data Commons,
