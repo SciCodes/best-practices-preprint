@@ -1,7 +1,7 @@
 LaTeX code for the _Best Practices_ preprint
 ============================================
 
-This is a repository linked to our Overleaf project for the paper on _Best Practices for Research Software Registries and Repositories: A Concise Guide_.
+This is a repository linked to our Overleaf project for the paper on _Nine Best Practices for Research Software Registries and Repositories: A Concise Guide_.
 
 
 License
@@ -15,7 +15,7 @@ The [LaTeX](https://www.latex-project.org) code and associated support files in 
 Authors and history
 ---------------------------
 
-The paper is the work of many authors:
+These guidelines are the work of many authors:
 
 * Alain Monteil, INRIA: HAL/Software Heritage, https://orcid.org/0000-0003-3150-4837
 * Alastair Kelly, NLM
