@@ -51,7 +51,7 @@ These guidelines are the work of many authors:
 * Ted Carnevale, Neuroscience Department, Yale: ModelDB
 * Tom Morrell, Caltech, https://orcid.org/0000-0001-9266-5146
 
-This repository is maintained by [Mike Hucka](https://github.com/mhucka), [Alice Allen](https://github.com/ASCL), and [Tom Morrell](https://github.com/tmorrell).
+This repository is maintained by [Mike Hucka](https://github.com/mhucka), [Alice Allen](https://github.com/ASCLnet), and [Tom Morrell](https://github.com/tmorrell).
 
 
 Acknowledgments
