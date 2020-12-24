@@ -37,8 +37,12 @@ linkcolor=darkblue,citecolor=mediumgreen]{hyperref}
 % Reduce space between TOC lines and remove section numbers.
 \usepackage{tocbasic}
 \newcommand\gobble[1]{}
-\DeclareTOCStyleEntry[beforeskip=.2em plus 1pt,entrynumberformat=\gobble,numwidth=0pt]{tocline}{section}
-\DeclareTOCStyleEntry[entrynumberformat=\gobble,numwidth=20pt]{tocline}{subsection}
+\DeclareTOCStyleEntry[beforeskip=-4pt, entrynumberformat=\gobble, numwidth=0pt]{tocline}{section}
+\DeclareTOCStyleEntry[beforeskip=-4pt, entrynumberformat=\gobble, numwidth=20pt]{tocline}{subsection}
+
+\makeatletter
+\renewcommand\@dotsep{400}
+\makeatother
 
 % Adjust paragraphs to be unindented, with a blank line between them.
 \setlength{\parindent}{0pt}          % Unindented paragraphs, separated ...
@@ -56,12 +60,20 @@ linkcolor=darkblue,citecolor=mediumgreen]{hyperref}
 \title{\textls[-27]{Nine Best Practices for Research Software Registries and Repositories:}\\
 A Concise Guide}
 
+\date{22 December 2020}
+
 \author{Task Force on Best Practices for Software Registries$\,$\footnote{Corresponding authors: \href{mailto:aallen@ascl.net}{Alice Allen}, \href{mailto:mhucka@caltech.edu}{Mike Hucka}, and \href{mailto:tmorrell@library.caltech.edu}{Tom Morrell}.\newline
 This Task Force was convened by the \href{https://github.com/force11/force11-sciwg}{\emph{FORCE11 Software Citation Implementation Working Group}}.}}
 
 \begin{document}
+
 \maketitle
 \thispagestyle{empty} % Needs to come after \maketitle to work on 1st page.
+
+% Do not use \abstract{}; it changes the format *globally*.  I don't have time
+% to debug what's going on.  The abstract is simple enough to do this way:
+{\small\vspace*{-10pt} Scientific software registries and repositories serve various roles in their respective disciplines. These resources improve software discoverability and research transparency, provide information for software citations, and foster preservation of computational methods that might otherwise be lost over time, thereby supporting research reproducibility and replicability. However, developing these resources takes effort, and few guidelines are available to help prospective creators of registries and repositories. To address this need, we present a set of nine best practices that can help managers define the scope, practices, and rules that govern individual registries and repositories. These best practices were distilled from the experiences of the creators of existing resources, convened by a Task Force of the \href{https://github.com/force11/force11-sciwg}{\emph{FORCE11 Software Citation Implementation Working Group}} during the years 2019--2020. We believe that putting in place specific policies such as those presented here will help scientific software registries and repositories better serve their users and their disciplines.}
+
 \tableofcontents
 
 % After this point, make each section start on a new page.
@@ -119,7 +131,7 @@ These nine best practices, though not an exhaustive list, are applicable to the 
 
 \textbf{Why we recommend this}: Different users of the registry or repository will benefit from having guidance on how to access the information they are interested in. For example, it is useful to describe how to search the collection, answer frequently asked questions (FAQs), provide tips and tricks, and to let users know who to contact for assistance.
 
-A separate section in these guidelines on the \emph{Conditions of use policy} covers terms of use of the collection, including data and API, and how best to cite records in the resource and the resource itself. Guidance for users who wish to contribute software is covered in the next section, \hyperref[best-practice-provide-guidance-to-software-contributors]{Provide guidance to software contributors}.
+A separate section in these guidelines on the \hyperref[best-practice-stipulate-conditions-of-use]{\emph{Conditions of use policy}} covers terms of use of the collection, including data and API, and how best to cite records in the resource and the resource itself. Guidance for users who wish to contribute software is covered in the next section, \hyperref[best-practice-provide-guidance-to-software-contributors]{\emph{Provide guidance to software contributors}}.
 
 \textbf{This should describe}:
 
@@ -672,7 +684,7 @@ You may also be interested in the \url{https://www.coretrustseal.org/why-certifi
 
 \href{https://orcid.org/0000-0002-5082-6404}{Alexandros Ioannidis}, CERN, \href{https://zenodo.org/}{Zenodo}
 
-\href{https://orcid.org/0000-0003-3477-2845}{Alice Allen}, University of Maryland, \href{http://ascl.net/}{ASCL}
+\href{https://orcid.org/0000-0003-3477-2845}{Alice Allen}, University of Maryland, \href{http://ascl.net/}{Astrophysics Source Code Library}
 
 \href{https://orcid.org/0000-0002-6523-6079}{Allen Lee}, Arizona State University, \href{https://www.comses.net/}{CoMSES Net}
 
@@ -714,7 +726,7 @@ EiC for JOSS, \href{https://www.force11.org/group/software-citation-implementati
 
 \href{https://orcid.org/0000-0002-2961-9670}{Michael R. Crusoe}, CWL, \href{https://www.debian.org/devel/debian-med/}{Debian-Med}
 
-\href{https://orcid.org/0000-0001-9105-5960}{Mike Hucka}, Caltech, \href{http://sbml.org/Main_Page}{SBML}, COMBINE
+\href{https://orcid.org/0000-0001-9105-5960}{Mike Hucka}, Caltech, \href{http://sbml.org/Main_Page}{SBML}, \href{http://co.mbine.org}{COMBINE}
 
 \href{https://orcid.org/0000-0003-1206-3431}{Mingfang Wu}, \href{https://ardc.edu.au/}{Australian Research Data Commons}
 
