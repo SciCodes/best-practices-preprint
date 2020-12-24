@@ -34,14 +34,18 @@ linkcolor=darkblue,citecolor=mediumgreen]{hyperref}
 \titleformat{\section}{\normalfont\Large\bfseries}{}{0pt}{}
 \titleformat{\subsection}{\slshape\large\bfseries}{}{0pt}{}
 
-% Reduce space between TOC lines and remove section numbers.
-\usepackage{tocbasic}
-\newcommand\gobble[1]{}
-\DeclareTOCStyleEntry[beforeskip=-4pt, entrynumberformat=\gobble, numwidth=0pt]{tocline}{section}
-\DeclareTOCStyleEntry[beforeskip=-4pt, entrynumberformat=\gobble, numwidth=20pt]{tocline}{subsection}
-
+% Reduce space between TOC lines, remove section numbers, and use
+% dotted lines for the sections.
+\usepackage{tocloft}
+\setlength{\cftbeforesecskip}{2.5pt}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
 \makeatletter
-\renewcommand\@dotsep{400}
+\renewcommand{\cftsecpresnum}{\begin{lrbox}{\@tempboxa}}
+\renewcommand{\cftsecaftersnum}{\end{lrbox}}
+\setlength{\cftsecnumwidth}{0pt}
+\renewcommand{\cftsubsecpresnum}{\begin{lrbox}{\@tempboxa}}
+\renewcommand{\cftsubsecaftersnum}{\end{lrbox}}
+\setlength{\cftsubsecnumwidth}{5pt}
 \makeatother
 
 % Adjust paragraphs to be unindented, with a blank line between them.
