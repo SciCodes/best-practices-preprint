@@ -5,16 +5,22 @@ This is a repository linked to our Overleaf project for the paper on _Nine Best 
 
 <pre>
 @misc{registries2020best,
-      title = {<a href="https://arxiv.org/abs/2012.13117">Nine Best Practices for Research Software Registries and Repositories: A Concise Guide}</a>, 
-      author = {Task Force on Best Practices for Software Registries: Alain Monteil and 
-              Alejandra Gonzalez-Beltran and Alexandros Ioannidis and Alice Allen and
-              Allen Lee and Anita Bandrowski and Bruce E. Wilson and Bryce Mecum and
-              Cai Fan Du and Carly Robinson and Daniel Garijo and Daniel S. Katz and
-              David Long and Genevieve Milliken and Herv\'e M\'enager and Jessica Hausman
-              and Jurriaan H. Spaaks and Katrina Fenlon and Kristin Vanderbilt and
-              Lorraine Hwang and Lynn Davis and Martin Fenner and Michael R. Crusoe
-              and Michael Hucka and Mingfang Wu and Neil Chue Hong and Peter Teuben
-              and Shelley Stall and Stephan Druskat and Ted Carnevale and Thomas Morrell},
+      title = {<a href="https://arxiv.org/abs/2012.13117">Nine Best Practices for Research Software Registries
+               and Repositories: A Concise Guide}</a>, 
+      author = {Task Force on Best Practices for Software Registries: 
+                Alain Monteil and Alejandra Gonzalez-Beltran and
+                Alexandros Ioannidis and Alice Allen and Allen Lee
+                and Anita Bandrowski and Bruce E. Wilson and
+                Bryce Mecum and Cai Fan Du and Carly Robinson
+                and Daniel Garijo and Daniel S. Katz and David Long
+                and Genevieve Milliken and Herv\'e M\'enager and
+                Jessica Hausman and Jurriaan H. Spaaks and
+                Katrina Fenlon and Kristin Vanderbilt and
+                Lorraine Hwang and Lynn Davis and Martin Fenner
+                and Michael R. Crusoe and Michael Hucka and
+                Mingfang Wu and Neil Chue Hong and Peter Teuben and
+                Shelley Stall and Stephan Druskat and Ted Carnevale
+                and Thomas Morrell},
       year = {2020},
       eprint = {2012.13117},
       archivePrefix = {arXiv},
